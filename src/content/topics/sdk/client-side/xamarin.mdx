@@ -69,7 +69,7 @@ Once the SDK is installed, you'll want to create a single, shared instance of `L
 Once the dependency is installed, you'll want to initialize the LaunchDarkly client. You'll want to create a single, shared instance of `LdClient`. To create a client instance, you need your environment's mobile key (available on your [account settings page](https://app.launchdarkly.com/settings#/projects)). Never embed a server-side SDK key into a mobile application.
 
 The following example shows the simplest way to create the client. It will block for up to
-1. seconds until the latest feature flags have been retrieved from LaunchDarkly.
+10 seconds until the latest feature flags have been retrieved from LaunchDarkly.
 
 <CodeTabs
   defaultValue="csharp"
